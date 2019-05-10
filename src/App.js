@@ -11,7 +11,7 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <Navbar />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -19,7 +19,7 @@ class App extends Component {
           <Route path="/rooms/:slug" exact component={SingleRoom} />
           <Route component={Error} />
         </Switch>
-      </div>
+      </>
     )
   }
 }
